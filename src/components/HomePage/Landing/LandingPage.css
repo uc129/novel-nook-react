@@ -1,0 +1,148 @@
+div.box-curve {
+    border-radius: 2em;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 6px 6px black;
+    border: 4px solid black;
+}
+
+div.landing-wrapper {
+    background: #38383800;
+}
+
+.show-img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.show-img-1 {
+    transform: scale(1.5) translate(-15%, -20%);
+}
+
+.box-curve:hover>.show-img-1 {
+    animation: hover-animation 2s forwards;
+}
+
+span.box-1-button {
+    position: absolute;
+}
+
+div.item-desc-1 {
+    width: 100%;
+    padding: 1em 2em 0;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.box-curve:hover>div.item-desc-1 {
+    animation: slide-animation 2s forwards;
+}
+
+img.show-img-2 {
+    width: 125%;
+    transform: translateY(10%);
+}
+
+.box-curve:hover img.show-img-2 {
+    transform: translateY(-5%);
+    transition: transform 2s ease;
+}
+
+.text-top-left,
+.text-bottom-right {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.text-top-left {
+    top: 15%;
+    left: 30%;
+}
+
+.text-bottom-right {
+    bottom: 12%;
+    right: 34%;
+    transform: translate(-120%);
+
+}
+
+.box-curve:hover .text-bottom-right {
+    transform: translate(50%, -5%);
+    transition: transform 4s ease;
+}
+
+.box-curve:hover .box-2-button {
+    transform: translate(-100%, 200%);
+    transition: transform 1.4s ease-in-out;
+}
+
+.show-img-3 {
+    object-fit: cover;
+    transform: scale(2) translate(20%, -4%);
+}
+
+.box-curve:hover>img.show-img-3 {
+    transform: scale(2) translate(-30%, -4%);
+    transition: transform 3s ease;
+}
+
+.box-3-button {
+    transform: scale(0%);
+}
+
+.box-curve:hover .box-3-button {
+    transform: scale(1) translate(84%, -25%);
+    transition: transform 2.4s ease-in-out;
+}
+
+.show-img-5 {
+    height: 100%;
+    object-fit: cover;
+}
+
+.sticker-box {
+    height: 65%;
+    width: 44%;
+    position: relative;
+    border: 8px solid transparent;
+    border-radius: 10%;
+    transform: translate(106.5%, -384%) rotate(6deg);
+    animation: border-animation 4s infinite linear;
+}
+
+.circle-text {
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(-360);
+    }
+}
+
+@keyframes slide-animation {
+    0% {
+        transform: translateX(-10%) scale(0.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%) scale(0.9);
+        opacity: 1;
+    }
+}
+
+@keyframes hover-animation {
+    0% {
+        transform: scale(1.5) translateY(-15%) translateX(-15%);
+    }
+
+    100% {
+        transform: scale(1.5) translateY(20%) translateX(-15%);
+    }
+}

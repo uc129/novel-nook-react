@@ -1,0 +1,40 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url('https://res.cloudinary.com/drqofmj2h/image/upload/v1681694008/5630502_girels.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+button#join-now {
+  color: #1a1a1a;
+  background-color: #272727;
+  margin-right: 24px;
+  border: solid #272727;
+}
+
+
+
+
+
+button#explore {
+
+  color: #272727;
+  background-color: #eae9e6;
+  margin-right: 24px;
+  border: solid #272727;
+
+
+}
